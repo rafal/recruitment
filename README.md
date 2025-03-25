@@ -1,4 +1,12 @@
 # Recruitment Task
-Your job is to do code review for current branch.
-Output of your work should be a list of issues you found in the code.
-It can be in the form of actual pull request with comments or just a list of issues in a text file for example in format: 'file_path:line - issue description'.
+Your task is to conduct a code review of the current branch
+Your work output should be a list of issues you found in the code.
+Provide feedback in one of the following formats:
+* Fork the repository, create Pull Request where you will add comments to the code.
+* A separate text file listing issues in the format:
+  `file_path:line - issue description`
+
+
+Deadline:
+You have one week to complete the task.
+Once completed, please submit your PR link or text file to us.
