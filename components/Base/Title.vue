@@ -4,10 +4,6 @@
   </h1>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
 <style scoped lang="scss">
 .title {
   font-size: 1.2rem;

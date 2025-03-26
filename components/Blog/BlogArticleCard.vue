@@ -1,22 +1,14 @@
 <template>
-  <VCard
-    color="orange lighten-4"
-    class="mx-auto fill-height"
-    max-width="300px"
-  >
-    <VImg
-      src="image"
-      height="200px"
-      cover
-    />
+  <VCard color="orange lighten-4" class="mx-auto fill-height" max-width="300px">
+    <VImg v-if="image" :src="image" height="200px" cover />
     <VCardTitle class="text-left article-card--title">
-      <BaseTitle>{{title}}</BaseTitle>
+      <BaseTitle>{{ title }}</BaseTitle>
     </VCardTitle>
     <VCardText class="text-left article-card--text">
-        {{ body }}
+      {{ body }}
     </VCardText>
     <VCardActions class="actions">
-      <VBtn color="teal" block variant="elevated" @click="readmore(`posts/${id}`)">
+      <VBtn color="teal" block variant="elevated" @click="router.push(`/posts/${id}`)">
         Read more
       </VBtn>
     </VCardActions>
@@ -24,15 +16,16 @@
 </template>
 
 <script setup lang="ts">
-import type { Article } from 'assets/interfaces/Article';
-
+import type { Article } from 'assets/interfaces/Article'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const props = withDefaults(defineProps<Article>(), {
   id: 0,
   title: 'Title should go there',
   body: 'Description of the article',
-});
-
-function readmore(url: string): void { window.location.href = url; }
+  image: '',
+  userId: 0
+})
 </script>
 
 <style scoped lang="scss">
