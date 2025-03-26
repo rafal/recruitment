@@ -1,75 +1,12 @@
-# Nuxt Minimal Starter
+# Recruitment Task
+Your task is to conduct a code review of the current branch
+Your work output should be a list of issues you found in the code.
+Provide feedback in one of the following formats:
+* Fork the repository, create Pull Request where you will add comments to the code.
+* A separate text file listing issues in the format:
+  `file_path:line - issue description`
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Deadline:
+You have one week to complete the task.
+Once completed, please submit your PR link or text file to us.
